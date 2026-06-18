@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #ff99c8;
+  --color-brand-lemon: #fcf6bd;
+  --color-brand-mint: #d0f4de;
+  --color-brand-blue: #a9def9;
+  --color-brand-mauve: #e4c1f9;
+  
+  --color-background: #fffdf7;
+  --color-foreground: #4b4453;
+
+  --font-serif: var(--font-chewy), cursive;
+  --font-sans: var(--font-caveat), cursive;
+  --font-handwriting: var(--font-caveat), cursive;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom styles for scrapbook feel */
+::selection {
+  background-color: var(--color-brand-pink);
+  color: var(--color-background);
+}
